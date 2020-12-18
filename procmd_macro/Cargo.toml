@@ -1,7 +1,7 @@
 [package]
 name = "procmd_macro"
 description = "A helper library for building commands (macro crate)"
-version = "0.0.0"
+version = "0.1.0"
 authors = ["Niklas Sauter <niklas.sauter@gmx.de>"]
 edition = "2018"
 repository = "https://git.sr.ht/~yuqio/procmd"
