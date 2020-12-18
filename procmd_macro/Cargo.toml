@@ -1,0 +1,19 @@
+[package]
+name = "procmd_macro"
+description = "A helper library for building commands (macro crate)"
+version = "0.0.0"
+authors = ["Niklas Sauter <niklas.sauter@gmx.de>"]
+edition = "2018"
+repository = "https://git.sr.ht/~yuqio/procmd"
+homepage = "https://sr.ht/~yuqio/procmd"
+readme = "README.md"
+license = "Apache-2.0 OR MIT"
+
+[dependencies]
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = { version = "1.0", features = ["full"] }
+vec1 = "1.6"
+
+[lib]
+proc_macro = true

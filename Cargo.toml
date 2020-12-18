@@ -1,0 +1,2 @@
+[workspace]
+members = ["procmd", "procmd_macro"]

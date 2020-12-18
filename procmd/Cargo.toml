@@ -1,0 +1,13 @@
+[package]
+name = "procmd"
+description = "A helper library for building commands"
+version = "0.0.0"
+authors = ["Niklas Sauter <niklas.sauter@gmx.de>"]
+edition = "2018"
+repository = "https://git.sr.ht/~yuqio/procmd"
+homepage = "https://sr.ht/~yuqio/procmd"
+readme = "README.md"
+license = "Apache-2.0 OR MIT"
+
+[dependencies]
+procmd_macro = { path = "../procmd_macro" }
