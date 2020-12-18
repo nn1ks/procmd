@@ -1,0 +1,22 @@
+image: ubuntu/lts
+packages:
+    - curl
+sources:
+    - https://git.sr.ht/~yuqio/procmd
+tasks:
+    - setup: |
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain nightly --profile minimal -y -q
+    - test: |
+        cd procmd/procmd
+        source $HOME/.cargo/env
+        cargo test --verbose
+    - clippy: |
+        cd procmd/procmd
+        source $HOME/.cargo/env
+        rustup component add clippy
+        cargo clippy --verbose -- --deny warnings
+    - fmt: |
+        cd procmd/procmd
+        source $HOME/.cargo/env
+        rustup component add rustfmt
+        cargo fmt --verbose -- --check
