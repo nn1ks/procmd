@@ -10,4 +10,4 @@ readme = "../README.md"
 license = "Apache-2.0 OR MIT"
 
 [dependencies]
-procmd_macro = { path = "../procmd_macro" }
+procmd_macro = { version = "0.1", path = "../procmd_macro" }
